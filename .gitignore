@@ -129,4 +129,7 @@ dmypy.json
 .pyre/
 
 # Images
-source/*.png
+source/**/*.png
+
+# Mac Files
+.DS_STORE
