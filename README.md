@@ -11,15 +11,15 @@ Create using [matplotlib](https://github.com/matplotlib/matplotlib) and [nflfast
 
 #### Drew Brees Career Air Yards
 <p align="center">
-<img src="infographics/drew_brees.png" alt="drew_brees" width=400/>
+<img src="infographics/drew_brees_air_yards.png" alt="drew_brees_air_yards" width=400/>
 </p>  
 
 #### Deebo Samuel 2021-22 Season
 <p align="center">
-<img src="infographics/deebo.png" alt="deebo_samuel" width=400/>
+<img src="infographics/deebo_samuel_receiving.png" alt="deebo_samuel_receiving" width=400/>
 </p>  
 
 #### Jimmy Garoppolo 2019 vs. 2021 Passing Efficiency  
 <p align="center">
-<img src="infographics/jimmy.png" alt="jimmy_garoppolo" width=400/>
+<img src="infographics/jimmy_garoppolo_passing.png" alt="jimmy_garoppolo_passing" width=400/>
 </p>
