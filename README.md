@@ -11,7 +11,7 @@ Create using [matplotlib](https://github.com/matplotlib/matplotlib) and [nflfast
 
 ### Infographics
 
-#### Drew Brees Career Air Yards
+<h4 align="center">Drew Brees Career Air Yards</h4>
 <p align="center">
 <img src="infographics/drew_brees_air_yards.png" alt="drew_brees_air_yards" width=400/>
 </p>  
