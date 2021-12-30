@@ -11,27 +11,27 @@ Create using [matplotlib](https://github.com/matplotlib/matplotlib) and [nflfast
 
 ### Infographics
 
-<h4 align="center">Drew Brees Career Air Yards</h4>
+<h3 align="center">Drew Brees Career Air Yards</h3>
 <p align="center">
 <img src="infographics/drew_brees_air_yards.png" alt="drew_brees_air_yards" width=400/>
 </p>  
 
-#### Deebo Samuel 2021-22 Season
+<h3 align="center">Deebo Samuel 2021-22 Season</h3>
 <p align="center">
 <img src="infographics/deebo_samuel_receiving.png" alt="deebo_samuel_receiving" width=400/>
 </p>  
 
-#### Jimmy Garoppolo 2019 vs. 2021 Passing Efficiency  
+<h3 align="center">Jimmy Garoppolo 2019 vs. 2021 Passing Efficiency</h3>  
 <p align="center">
 <img src="infographics/jimmy_garoppolo_passing.png" alt="jimmy_garoppolo_passing" width=400/>
 </p>  
 
-#### Points From Drive-Extending Penalties  
+<h3 align="center">Points From Drive-Extending Penalties</h3>  
 <p align="center">
 <img src="infographics/third_down_penalties.png" alt="drive_extending_penalties" width=400/>
 </p>  
 
-#### Best (and Worst) Second Half Performers  
+<h3 align="center">Best (and Worst) Second Half Performers</h3>  
 <p align="center">
 <img src="infographics/second_half_stats.png" alt="second_half_stats" width=400/>
 </p>
