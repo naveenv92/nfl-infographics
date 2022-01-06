@@ -25,9 +25,10 @@ jobs:
 
       - name: Third Down Penalties Infographic
         run: |
-          jupyter nbconvert --to script notebooks/third_down_penalties/third_down_penalties.ipynb
-          python notebooks/third_down_penalties/third_down_penalties.py
-          mv notebooks/third_down_penalties/third_down_penalties.png infographics/
+          cd notebooks/third_down_penalties
+          jupyter nbconvert --to script third_down_penalties.ipynb
+          python third_down_penalties.py
+          mv third_down_penalties.png ../../infographics/
 
       - name: Commit and Push Results
         run: |
