@@ -3,7 +3,7 @@ name: Update Infographics Workflow
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -32,6 +32,8 @@ jobs:
 
       - name: Commit and Push Results
         run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git add infographics/third_down_penalties.png
           git commit -m "Updated infographics on `date` with GitHub Actions"
           git push origin github_worklow_test
