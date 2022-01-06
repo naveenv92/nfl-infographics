@@ -33,4 +33,4 @@ jobs:
         run: |
           git add infographics/third_down_penalties.png
           git commit -m "Updated infographics on `date` with GitHub Actions"
-          git push origin github_workflows
+          git push origin github_worklow_test
