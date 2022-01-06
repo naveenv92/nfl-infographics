@@ -1,0 +1,36 @@
+name: Update Infographics Workflow
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  update_infographics:
+    name: Update Infographics with Latest Data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Third Down Penalties Infographic
+        run: |
+          jupyter nbconvert --to script notebooks/third_down_penalties/third_down_penalties.ipynb
+          python notebooks/third_down_penalties/third_down_penalties.py
+          mv notebooks/third_down_penalties/third_down_penalties.png infographics/
+
+      - name: Commit and Push Results
+        run: |
+          git add infographics/third_down_penalties.png
+          git commit -m "Updated infographics on `date` with GitHub Actions"
+          git push origin github_worklow_test
