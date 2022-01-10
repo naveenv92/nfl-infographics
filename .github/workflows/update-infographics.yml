@@ -1,9 +1,6 @@
 name: Update Infographics Workflow
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
