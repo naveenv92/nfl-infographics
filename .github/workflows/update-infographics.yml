@@ -20,33 +20,12 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Deebo Samuel Receiving Infographic
+      - name: Passer Rankings ANY/A
         run: |
-          cd notebooks/deebo_samuel_receiving
-          jupyter nbconvert --to script deebo_samuel_receiving.ipynb
-          python deebo_samuel_receiving.py
-          mv deebo_samuel_receiving.png ../../infographics/
-
-      - name: Jimmy Garoppolo Passing Infographic
-        run: |
-          cd notebooks/jimmy_garoppolo_passing
-          jupyter nbconvert --to script jimmy_garoppolo_passing.ipynb
-          python jimmy_garoppolo_passing.py
-          mv jimmy_garoppolo_passing.png ../../infographics/
-
-      - name: Third Down Penalties Infographic
-        run: |
-          cd notebooks/third_down_penalties
-          jupyter nbconvert --to script third_down_penalties.ipynb
-          python third_down_penalties.py
-          mv third_down_penalties.png ../../infographics/
-
-      - name: Second Half Stats Infographic
-        run: |
-          cd notebooks/second_half_stats/
-          jupyter nbconvert --to script second_half_stats.ipynb
-          python second_half_stats.py
-          mv second_half_stats.png ../../infographics/
+          cd notebooks/adjusted_net_yards_pts/
+          jupyter nbconvert --to script adjusted_net_yards_pts.ipynb
+          python adjusted_net_yards_pts.py
+          mv adjusted_net_yards_pts.png ../../infographics/
 
       - name: Commit and Push Results
         run: |
