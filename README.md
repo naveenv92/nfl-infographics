@@ -7,7 +7,8 @@ Create using [matplotlib](https://github.com/matplotlib/matplotlib) and [nflfast
 2. [Deebo Samuel 2021-22 Season](#deebo-samuel-2021-22-season)  
 3. [Jimmy Garoppolo 2019 vs. 2021 Passing Efficiency](#jimmy-garoppolo-2019-vs-2021-passing-efficiency)
 4. [Points From Drive-Extending Penalties](#points-from-drive-extending-penalties)
-5. [Best (and Worst) Second Half Performers](#best-and-worst-second-half-performers)
+5. [Best (and Worst) Second Half Performers](#best-and-worst-second-half-performers)  
+6. [Ranking Passers by ANY/A](#ranking-passers-by-any-a)
 
 ### Infographics
 
@@ -34,4 +35,9 @@ Create using [matplotlib](https://github.com/matplotlib/matplotlib) and [nflfast
 <h3 align="center">Best (and Worst) Second Half Performers</h3>  
 <p align="center">
 <img src="infographics/second_half_stats.png" alt="second_half_stats" width=400/>
+</p>  
+
+<h3 align="center">Ranking Passers by ANY/A</h3>  
+<p align="center">
+<img src="infographics/adjusted_net_yards_pts.png" alt="adjusted_net_yards_pts" width=400/>
 </p>
