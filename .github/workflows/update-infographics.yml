@@ -1,9 +1,6 @@
 name: Update Infographics Workflow
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -23,6 +20,20 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
+      - name: Deebo Samuel Receiving Infographic
+        run: |
+          cd notebooks/deebo_samuel_receiving
+          jupyter nbconvert --to script deebo_samuel_receiving.ipynb
+          python deebo_samuel_receiving.py
+          mv deebo_samuel_receiving.png ../../infographics/
+
+      - name: Jimmy Garoppolo Passing Infographic
+        run: |
+          cd notebooks/jimmy_garoppolo_passing
+          jupyter nbconvert --to script jimmy_garoppolo_passing.ipynb
+          python jimmy_garoppolo_passing.py
+          mv jimmy_garoppolo_passing.png ../../infographics/
+
       - name: Third Down Penalties Infographic
         run: |
           cd notebooks/third_down_penalties
@@ -30,11 +41,17 @@ jobs:
           python third_down_penalties.py
           mv third_down_penalties.png ../../infographics/
 
+      - name: Second Half Stats Infographic
+        run: |
+          cd notebooks/second_half_stats/
+          jupyter nbconvert --to script second_half_stats.ipynb
+          python second_half_stats.py
+          mv second_half_stats.png ../../infographics/
+
       - name: Commit and Push Results
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git checkout -b github_workflow_test
-          git add infographics/third_down_penalties.png
+          git add infographics/
           git commit -m "Updated infographics on `date` with GitHub Actions"
-          git push origin github_workflow_test
+          git push origin main
